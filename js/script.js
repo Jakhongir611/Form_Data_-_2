@@ -30,40 +30,43 @@ x_2.addEventListener("click", (event) => {
     main_page.classList.remove('active')
 })
 
-btn_sign_in.addEventListener("click", (event)=>{
+btn_sign_in.addEventListener("click", (event) => {
     event.preventDefault()
     sign_in.classList.remove('active')
     main_page.classList.add('active')
 })
-btn_sign_up.addEventListener("click", (event)=>{
+btn_sign_up.addEventListener("click", (event) => {
     event.preventDefault()
     sign_up.classList.remove('active')
     main_page.classList.add('active')
 })
 
-form_up.addEventListener('submit', (event)=>{
+form_up.addEventListener('submit', (event) => {
     event.preventDefault()
-    
+
     let inputs = doc.querySelectorAll('input')
     let check = doc.querySelector('#check')
 
     let form_data = {}
 
-    inputs.forEach(item=>{
+    inputs.forEach(item => {
         form_data[item.name] = item.value
         form_data['check'] = check.checked
     })
-    
+
     let obj = {
-    name: imya.value,
-    surname: familiya.value,
-    password: pass.value,
-    email: email.value,
-    file: file.value,
-    city: city.value,
-    data: data.value
-}
-console.log(obj);
+        name: imya.value,
+        surname: familiya.value,
+        password: pass.value,
+        email: email.value,
+        file: file.value,
+        city: city.value,
+        data: data.value
+    }
+    console.log(obj);
+    
+    let json = JSON.stringify(obj)
+    console.log(json);
 
     imya.value = ""
     familiya.value = ""
