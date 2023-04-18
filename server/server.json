@@ -1,0 +1,23 @@
+{
+    "cars": [
+        {
+            "title": "cobalt",
+            "price": "15000$",
+            "procent": "10%",
+            "number": "611",
+            "color": "white"
+        },   {
+            "title": "cobalt",
+            "price": "15000$",
+            "procent": "10%",
+            "number": "611",
+            "color": "white"
+        },   {
+            "title": "cobalt",
+            "price": "15000$",
+            "procent": "10%",
+            "number": "611",
+            "color": "white"
+        }
+    ]
+}
